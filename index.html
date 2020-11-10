@@ -3,7 +3,7 @@
 		.video {
 			/* pointer-events: none; */
 			position: absolute;
-			filter: blur(2px);
+			/* filter: blur(2px); */
 		}
 
 		.background {
@@ -15,24 +15,19 @@
 		}
 
 		.video-input {
-			/* border-style: none; */
 			outline: none;
-			min-width: 400px;
-			/* background-color: #272822;
-			border-color: #272822; */
+			width: 100%;
 			padding: 8px;
-			/* color: #F8F8F2; */
 			font-size: 16px;
 			border-radius: 8px;
 		}
 
 		.video-input-form {
 			position: absolute;
-			left: -100px;
-			top: -100px;
+			width: 20%;
+			left: 0px;
+			top: 0px;
 			z-index: 2;
-			margin: 100px;
-			/* background-color: #272822; */
 			transition: opacity 0.5s;
 		}
 
@@ -49,18 +44,20 @@
 			height: 100%;
 			background-color: transparent;
 			border-style: none;
+			border-radius: 8px;
 		}
 
-		/* .wiki-blur {
-			opacity: 0.5;
+		.wiki-blur {
+			/* opacity: 0.5; */
 			position: absolute;
 			left: 20%;
 			width: 60%;
 			height: 100%;
 			background-color: transparent;
 			border-style: none;
-			backdrop-filter: blur(4px);
-		} */
+			backdrop-filter: blur(2px);
+			border-radius: 16px;
+		}
 
 		body {
 			padding: 0px;
@@ -75,7 +72,7 @@
 	<iframe id='video' , class='video' frameborder="0" width=100% height=100%
 		src="https://www.youtube.com/embed/Ftm2uv7-Ybw?controls=1&amp;showinfo=0&amp;start=1&amp;autoplay=1&amp;loop=1&amp">
 	</iframe>
-	<!-- <div class="wiki-blur"></div> -->
+	<div class="wiki-blur"></div>
 	<iframe id='wiki' , class='wiki' src="https://en.m.wikipedia.org/wiki/Euler%27s_formula"
 		allowtransparency="true"></iframe>
 	<form action="#" id="videoInputForm" class="video-input-form">
