@@ -1,6 +1,6 @@
 <head>
 	<style type="text/css">
-		#video {
+		.video {
 			/* pointer-events: none; */
 			position: absolute;
 			filter: blur(2px);
@@ -40,7 +40,7 @@
 			opacity: 0;
 		}
 
-		#wiki {
+		.wiki {
 			opacity: 0.5;
 			filter: invert();
 			position: absolute;
@@ -76,7 +76,8 @@
 		src="https://www.youtube.com/embed/Ftm2uv7-Ybw?controls=1&amp;showinfo=0&amp;start=1&amp;autoplay=1&amp;loop=1&amp">
 	</iframe>
 	<!-- <div class="wiki-blur"></div> -->
-	<iframe id='wiki' src="https://en.m.wikipedia.org/wiki/Euler%27s_formula" allowtransparency="true"></iframe>
+	<iframe id='wiki' , class='wiki' src="https://en.m.wikipedia.org/wiki/Euler%27s_formula"
+		allowtransparency="true"></iframe>
 	<form action="#" id="videoInputForm" class="video-input-form">
 		<input id='videoInput' class='video-input' value="paste youtube url here"></input>
 	</form>
