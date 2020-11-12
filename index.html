@@ -1,5 +1,12 @@
 <head>
 	<style type="text/css">
+		.video-container {
+			position: relative;
+			overflow: hidden;
+			width: 100vw;
+			height: 100vh;
+		}
+
 		.video {
 			position: absolute;
 			width: 100vw;
@@ -62,7 +69,6 @@
 		}
 
 		.wiki-blur {
-			/* opacity: 0.5; */
 			background-color: transparent;
 			border-style: none;
 			backdrop-filter: blur(2px);
@@ -71,17 +77,18 @@
 
 		.center {
 			position: absolute;
-			left: 20%;
-			width: 60%;
-			top: 5%;
-			height: 90%;
+			left: 20vw;
+			width: 60vw;
+			top: 5vh;
+			height: 90vh;
 		}
 
 		.nav-button {
 			position: absolute;
 			width: 50px;
-			top: 40%;
-			height: 20%;
+			top: 50%;
+			transform: translate(0px, -100px);
+			height: 200px;
 			outline: none;
 			cursor: pointer;
 			border-style: none;
@@ -101,14 +108,16 @@
 		body {
 			padding: 0px;
 			margin: 0px;
-			overflow-y: hidden;
+			overflow: hidden;
 			background-color: black;
 		}
 	</style>
 </head>
 
 <body>
-	<iframe id='video' , class='video' frameborder="0" width=100% height=100%>
+	<div class='video-container'>
+		<iframe id='video' , class='video' frameborder="0" width=100% height=100%>
+	</div>
 	</iframe>
 	<div class="wiki-blur center"></div>
 	<button class="nav-button nav-back" onclick="nav(-1)"></button>
